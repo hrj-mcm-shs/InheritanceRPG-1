@@ -84,6 +84,8 @@
         android:ems="3"
         android:fontFamily="@font/thewildbreath"
         android:inputType="number"
+        android:hint="enter"
+        android:textColorHint="#F2F0F0"
         android:textColor="#F2F0F0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -185,6 +187,7 @@
         android:hint="Enter Hero Name"
         android:inputType="textPersonName"
         android:textColor="#F2F0F0"
+        android:textColorHint="#F2F0F0"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
