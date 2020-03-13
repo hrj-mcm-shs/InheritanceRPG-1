@@ -55,16 +55,16 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="96dp"
         android:background="@null"
-        android:text="Save"
-        android:textSize="20dp"
-        android:textColor="#F2F0F0"
         android:fontFamily="@font/thewildbreath"
+        android:text="Save"
+        android:textColor="#F2F0F0"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/charImage"
-        app:layout_constraintVertical_bias="0.754" />
+        app:layout_constraintTop_toBottomOf="@+id/charImage3"
+        app:layout_constraintVertical_bias="0.935" />
 
     <TextView
         android:id="@+id/textView4"
