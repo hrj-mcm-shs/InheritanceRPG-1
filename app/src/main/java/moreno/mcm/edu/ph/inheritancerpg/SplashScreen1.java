@@ -9,7 +9,6 @@ import android.transition.Fade;
 
 public class SplashScreen1 extends AppCompatActivity {
     Handler handler;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
