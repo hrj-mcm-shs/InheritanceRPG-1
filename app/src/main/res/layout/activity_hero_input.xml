@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HeroInput"
+    android:background="@drawable/backgroundone">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hero Selection"
+        android:textSize="50dp"
+        android:textColor="#f2f0f0"
+        android:fontFamily="@font/thewildbreath"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+
+    <ImageView
+        android:id="@+id/charImage"
+        android:layout_width="281dp"
+        android:layout_height="253dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/warrior"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:background="@null"
+        android:textSize="30dp"
+        android:fontFamily="@font/thewildbreath"
+        android:textColor="#f2f0f0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/charImage"
+        app:layout_constraintVertical_bias="0.892" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="400dp"
+        android:fontFamily="@font/thewildbreath"
+        android:text="Class"
+        android:textColor="#F2F0F0"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerclass"
+        android:layout_width="140dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="388dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:entries="@array/Class"
+        android:textColor="#F2F0F0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="204dp"
+        android:layout_marginLeft="204dp"
+        android:layout_marginTop="532dp"
+        android:ems="3"
+        android:fontFamily="@font/thewildbreath"
+        android:inputType="number"
+        android:textColor="#F2F0F0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/thewildbreath"
+        android:text="Level"
+        android:textColor="#F2F0F0"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/thewildbreath"
+        android:text="Job"
+        android:textColor="#F2F0F0"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Spinner
+        android:id="@+id/warriorspinner"
+        android:layout_width="149dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="44dp"
+        android:entries="@array/Warrior"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerclass"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@+id/spinnerclass"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerclass" />
+
+    <Spinner
+        android:id="@+id/slayerspinner"
+        android:layout_width="149dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="44dp"
+        android:entries="@array/Slayer"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerclass"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@+id/spinnerclass"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerclass" />
+
+    <Spinner
+        android:id="@+id/magespinner"
+        android:layout_width="149dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="44dp"
+        android:entries="@array/Mage"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerclass"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@+id/spinnerclass"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerclass" />
+
+    <Spinner
+        android:id="@+id/clericspinner"
+        android:layout_width="149dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="44dp"
+        android:entries="@array/Cleric"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerclass"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@+id/spinnerclass"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerclass" />
+
+    <Spinner
+        android:id="@+id/roguespinner"
+        android:layout_width="149dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="44dp"
+        android:entries="@array/Rogue"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerclass"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@+id/spinnerclass"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerclass" />
+
+    <EditText
+        android:id="@+id/nameinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/thewildbreath"
+        android:hint="Enter Hero Name"
+        android:inputType="textPersonName"
+        android:textColor="#F2F0F0"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.516" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

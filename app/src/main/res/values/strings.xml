@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Inheritance RPG</string>
+    <string-array name="Class">
+        <item>Warrior</item>
+        <item>Rogue</item>
+        <item>Mage</item>
+        <item>Cleric</item>
+        <item>Slayer</item>
+    </string-array>
+    <string-array name="Warrior">
+        <item>Juggernaut</item>
+        <item>Berserker</item>
+    </string-array>
+    <string-array name="Rogue">
+        <item>Deadeye</item>
+        <item>Trickster</item>
+    </string-array>
+    <string-array name="Mage">
+        <item>Elementalist</item>
+        <item>Necromancer</item>
+    </string-array>
+    <string-array name="Cleric">
+        <item>High Priest</item>
+        <item>Inquisitor</item>
+    </string-array>
+    <string-array name="Slayer">
+        <item>Gladiator</item>
+        <item>Champion</item>
+    </string-array>
+    <string-array name="Monster">
+        <item>Wyvern</item>
+        <item>Chiropteran</item>
+        <item>Skeleton</item>
+        <item>Dragon</item>
+        <item>Voidspawn</item>
+    </string-array>
+
+</resources>
